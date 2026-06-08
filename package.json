@@ -1,0 +1,29 @@
+{
+  "name": "veltrix-ai",
+  "version": "1.0.0",
+  "description": "A modern weather dashboard that fetches data from public weather APIs",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "start": "node server/dist/index.js",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "keywords": [
+    "weather",
+    "dashboard",
+    "api",
+    "real-time"
+  ],
+  "author": "junikingfarhan-omar",
+  "license": "MIT"
+}
